@@ -1,22 +1,23 @@
 # BMI Calculator
 
 # ⇓⇓First taking data from users⇓⇓
-insert1=float(input("Enter your HEIGHT(meter)---->"))
-insert2=int(input("Enter your WEIGHT----------->"))
-insert3=str("this is your BMI")
+height=float(input("Enter your HEIGHT(meter):"))
+weight=int(input("Enter your WEIGHT       :"))
+
 
 # ⇓⇓Putting the formula⇓⇓
-bmi=(insert2/(insert1*insert1))
+bmi=round((weight/(height*height)),2)
 
-print(bmi, "This is your BMI.")
+print(f"Your BMI is :{bmi}\nAnd ",end="")
 
 # ⇓⇓Now giving the conditions⇓⇓
-if bmi >24.9:
-    print("Yor are over weight try to lose your fat.")
+if bmi >=24.9:
+    print("you are over weight try to lose your fat.")
 elif bmi <18:
-    print("You are under weight try to gain some weight.")
+    print("you are under weight try to gain some weight.")
 else:
-    print("Hurray!, Congratulation your BMI is normal. Maintain this body")
+    print("hurray! Congratulation your BMI is normal. Maintain this body")
 
 
 # Created by SPIGER INFINITY
+# Modified by Rajarshi Mondal
